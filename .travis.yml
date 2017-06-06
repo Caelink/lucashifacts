@@ -11,6 +11,7 @@ addons:
 
 script:
   - shellcheck *.sh src/*.sh
+  - tests/run_all.sh
 
 matrix:
   fast_finish: true
