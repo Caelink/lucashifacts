@@ -4,7 +4,7 @@
 export facthtml
 export tmpstring
 
-randomfacts="$(shuf -n 1 lucashifacts)"
+randomfacts="$(shuf -n 1 "$FACTS_SOURCE")"
 facthtml="$(echo "${randomfacts}" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g')"
 tmpstring="$(eval "echo \"$(cat "$RUN_DIR"/assets/template)\"")"
 
