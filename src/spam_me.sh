@@ -1,9 +1,10 @@
 #!/bin/bash
 
-source ./config.sh
+# shellcheck source=src/config.sh
+source "$RUN_DIR/src/config.sh"
 
 if [ -r "$EMAILS" ]; then
     xargs -n 1 "$MAIL_SCRIPT" < "$EMAILS"
 else
-    ./$MAIL_SCRIPT
+    $MAIL_SCRIPT
 fi
