@@ -1,8 +1,17 @@
 #!/bin/bash
 
 usage() {
-  echo "./main.sh -r|--rundir [Run directory] -c|--config [config file]"
+  echo "./main.sh -r|--rundir [Run directory] -c|--config [config file] -u|--update-first -h|--help"
   exit 2
+}
+
+update() {
+(
+  cd ~/lucashi/ || exit 1
+  git fetch --all
+  git checkout master
+  git pull
+)
 }
 
 export RUN_DIR
@@ -25,6 +34,9 @@ case $key in
     -h|--help)
     echo "Need Help?"
     usage
+    ;;
+    -u|--update-first)
+    update
     ;;
     *)
             # unknown option
