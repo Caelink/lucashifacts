@@ -10,7 +10,7 @@ addons:
       - shellcheck
 
 script:
-  - shellcheck *.sh src/*.sh
+  - shellcheck **/*.sh
   - tests/run_all.sh
 
 matrix:

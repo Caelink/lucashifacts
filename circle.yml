@@ -13,5 +13,5 @@ dependencies:
 ## Customize test commands
 test:
   post:
+    - shellcheck **/*.sh
     - tests/run_all.sh
-    - shellcheck *.sh src/*.sh
