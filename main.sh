@@ -7,7 +7,7 @@ usage() {
 
 update() {
 (
-  cd ~/lucashi/ || exit 1
+  cd ~/lucashifacts/ || exit 1
   git fetch --all
   git checkout master
   git pull
