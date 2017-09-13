@@ -4,4 +4,13 @@
 
 Literally meme at me
 
-*for some definition of useful
+<sup> * for some definition of useful</sup>
+
+
+# Standards of the Lucashi project
+
+- Tabs, while better than spaces, will be sacrificed to appease the python gods.
+- Ask not why it should be written in bash, but if it can be written in bash.
+- Shellcheck overrides are to be done with great caution.
+- 1 space after a comment at all times.
+- If you must use a language other than bash, it must have comments with \#
