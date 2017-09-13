@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export EMAILS="${HOME}/.local/share/lucashi/emails"
 export MAIL_SCRIPT="$RUN_DIR/src/disrupt.sh"
 export FACTS_SOURCE="$RUN_DIR/assets/lucashifacts"
 
@@ -8,5 +7,6 @@ export FACTS_SOURCE="$RUN_DIR/assets/lucashifacts"
 # p = 1 / IMAGE_RARITY
 export IMAGE_RARITY=1
 
-# where the image assets are stored
-export IMG_ASSET_DIR="${RUN_DIR}/assets/img"
+# Supa secret file pointers
+export IMG_ASSET_DIR="$SECRETS/images"
+export EMAILS="$SECRETS/emails"
