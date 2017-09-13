@@ -19,7 +19,7 @@ echo '</p>' >> "${TEMP_FILE}"
 
 # if the directory doesn't exist
 # or no files inside the directory
-if [[ ! -d "${IMG_ASSET_DIR}" || ! $(find "${IMG_ASSET_DIR}" -mindepth 1 -iname '*.jpg') ]]; then
+if [[ ! -d "${IMG_ASSET_DIR}" || ! $(find "${IMG_ASSET_DIR}" -mindepth 1 \( -iname '*.jpg' -o -iname '*.png' \) ) ]]; then
     DICE_ROLL=0
 fi
 

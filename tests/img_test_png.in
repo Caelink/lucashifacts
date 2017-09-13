@@ -1,0 +1,7 @@
+#!/bin/bash
+
+export EMAILS=""
+export MAIL_SCRIPT="$RUN_DIR/src/disrupt.sh"
+export FACTS_SOURCE="$TEST_DIR/img_test_png.lf"
+export IMAGE_RARITY=1
+export IMG_ASSET_DIR="${RUN_DIR}/tests/img_test_png_img"
