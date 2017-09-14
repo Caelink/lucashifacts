@@ -31,7 +31,7 @@ if [[ "${DICE_ROLL}" -eq 1 ]]; then
     export INCLUDE_IMAGE=1
 
     # Choose a random image from the image assets directory
-    RANDOM_IMAGE=$(printf '%q' "${IMAGES_LIST}" | shuf -n 1)
+    RANDOM_IMAGE=$(printf '%s' "${IMAGES_LIST}" | shuf -n 1)
 
     # We use a partial here because for large images, we would otherwise
     # encounter bash's "Argument list too long" error. Writing to a file and
