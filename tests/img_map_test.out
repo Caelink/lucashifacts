@@ -1,0 +1,38 @@
+Subject: lucashi fact of the day
+Content-Type: multipart/related; boundary="message"
+
+--message
+Content-Type: multipart/alternative; boundary="body"
+
+--body
+Content-Type: text/html; charset="UTF-8"
+
+<h1>Hello!</h1>
+<p>it is i your dude<br>
+thank you for subscribing to<br>
+lucashi's lit facts</p>
+
+<p>Did <em>you</em> know that
+this is a test fact that maps to an image
+</p>
+<img src="cid:lucas">
+
+--body--
+--message
+Content-Type: image/jpeg; name="lucashi.jpg"
+Content-Disposition: inline; filename="lucashi.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <lucas>
+X-Attachment-Id: lucas
+
+/9j/4AAQSkZJRgABAQEASABIAAD//gBNRmlsZSBzb3VyY2U6IGh0dHA6Ly9jb21tb25zLndpa2lt
+ZWRpYS5vcmcvd2lraS9GaWxlOkJsYWNrX2Zyb21fYV9jYW1lcmEuanBn/9sAQwAGBAUGBQQGBgUG
+BwcGCAoQCgoJCQoUDg8MEBcUGBgXFBYWGh0lHxobIxwWFiAsICMmJykqKRkfLTAtKDAlKCko/8AA
+CwgA8AFAAQERAP/EABUAAQEAAAAAAAAAAAAAAAAAAAAI/8QAFBABAAAAAAAAAAAAAAAAAAAAAP/a
+AAgBAQAAPwCVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z
+--message--

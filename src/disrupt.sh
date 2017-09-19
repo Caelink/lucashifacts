@@ -1,5 +1,6 @@
 #!/bin/bash
 MO="${RUN_DIR}/lib/mo"
+IMAP="${RUN_DIR}/src/check_imap.sh"
 
 RANDOM_FACT="$(shuf -n 1 "${FACTS_SOURCE}")"
 # This is exported so mo picks it up
@@ -22,6 +23,12 @@ if [[ ! -d "${IMG_ASSET_DIR}" || ! "${IMAGES_LIST}" ]]; then
     DICE_ROLL=0
 fi
 
+IMAGE_MATCH="${IMG_ASSET_DIR}/$($IMAP "$RANDOM_FACT")"
+if [[ -f $IMAGE_MATCH ]]; then
+    DICE_ROLL=1
+    SENT_IMAGE=$IMAGE_MATCH
+fi
+
 if [[ "${DICE_ROLL}" -eq 1 ]]; then
     # Setting INCLUDE_IMAGE allows us to conditionally include parts of the
     # Mustache template
@@ -30,13 +37,16 @@ if [[ "${DICE_ROLL}" -eq 1 ]]; then
     # the value is set to decide whether to include that part of the template
     export INCLUDE_IMAGE=1
 
-    # Choose a random image from the image assets directory
-    RANDOM_IMAGE=$(printf '%s' "${IMAGES_LIST}" | shuf -n 1)
+    # iff we don't have an image to map to and should show one, pick a random one
+    if [[ -z $SENT_IMAGE ]]; then
+        # Choose a random image from the image assets directory
+        SENT_IMAGE=$(printf '%s' "${IMAGES_LIST}" | shuf -n 1)
+    fi
 
     # We use a partial here because for large images, we would otherwise
     # encounter bash's "Argument list too long" error. Writing to a file and
     # then calling it as a partial gets around that issue.
-    base64 "${RANDOM_IMAGE}" > "${PARTIAL}"
+    base64 "${SENT_IMAGE}" > "${PARTIAL}"
 fi
 
 ${MO} "${TEMPLATE}" > "${RENDERED_TEMPLATE}"

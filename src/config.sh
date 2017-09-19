@@ -10,3 +10,4 @@ export IMAGE_RARITY=10
 # Supa secret file pointers
 export IMG_ASSET_DIR="$SECRETS/images"
 export EMAILS="$SECRETS/emails"
+export IMAP_SOURCE="$RUN_DIR/assets/related_imap.json"

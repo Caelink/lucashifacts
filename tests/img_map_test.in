@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export EMAILS=""
+export MAIL_SCRIPT="$RUN_DIR/src/disrupt.sh"
+export FACTS_SOURCE="$TEST_DIR/img_map_test/img_map_test.lf"
+export IMAGE_RARITY=0
+export IMG_ASSET_DIR="$TEST_DIR/img_map_test"
+export IMAP_SOURCE="$TEST_DIR/img_map_test/img_map_test.json"
