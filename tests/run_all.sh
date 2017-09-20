@@ -3,6 +3,7 @@
 export TEST_DIR="$PWD/tests"
 tests_to_run=(
     bad_map_test
+    bad_json_test
     base_test
     base64_filename_too_long_like_actually_way_too_long_beyond_reasonable_length_that_files_should_naturally_be_test
     fake_image_test
