@@ -5,7 +5,7 @@ export FACTS_SOURCE="$RUN_DIR/assets/lucashifacts"
 
 # controls how likely a lucashi image will be shown
 # p = 1 / IMAGE_RARITY
-export IMAGE_RARITY=10
+export IMAGE_RARITY=3
 
 # Supa secret file pointers
 export IMG_ASSET_DIR="$SECRETS/images"
