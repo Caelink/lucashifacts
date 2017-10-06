@@ -1,0 +1,10 @@
+#!/bin/bash
+
+TEST_NAME="bad_json_test"
+
+export EMAILS=""
+export MAIL_SCRIPT="$RUN_DIR/src/disrupt.sh"
+export FACTS_SOURCE="$TEST_DIR/$TEST_NAME/facts.lf"
+export IMAGE_RARITY=0
+export IMG_ASSET_DIR="$TEST_DIR/$TEST_NAME/img"
+export IMAP_SOURCE="$TEST_DIR/$TEST_NAME/img_map.json"

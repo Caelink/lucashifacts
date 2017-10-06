@@ -1,7 +1,0 @@
-#!/bin/bash
-
-export EMAILS=""
-export MAIL_SCRIPT="$RUN_DIR/src/disrupt.sh"
-export FACTS_SOURCE="$TEST_DIR/base64_filename_too_long_like_actually_way_too_long_beyond_reasonable_length_that_files_should_naturally_be_test.lf"
-export IMAGE_RARITY=1
-export IMG_ASSET_DIR="${RUN_DIR}/tests/base64_filename_too_long_like_actually_way_too_long_beyond_reasonable_length_that_files_should_naturally_be_test_img"

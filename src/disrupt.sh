@@ -18,7 +18,7 @@ PARTIAL="${RUN_DIR}/assets/partial"
 # Set the dice roll to zero if:
 #   - the image assets directory doesn't exist
 #   - no supported image files exist inside the image assets directory
-IMAGES_LIST=$(find "${IMG_ASSET_DIR}" -mindepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' \) )
+IMAGES_LIST=$(find "${IMG_ASSET_DIR}" -mindepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' \) 2>/dev/null )
 if [[ ! -d "${IMG_ASSET_DIR}" || ! "${IMAGES_LIST}" ]]; then
     DICE_ROLL=0
 fi

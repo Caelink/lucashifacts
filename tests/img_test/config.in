@@ -1,0 +1,9 @@
+#!/bin/bash
+
+TEST_NAME="img_test"
+
+export EMAILS=""
+export MAIL_SCRIPT="$RUN_DIR/src/disrupt.sh"
+export FACTS_SOURCE="$TEST_DIR/$TEST_NAME/facts.lf"
+export IMAGE_RARITY=1
+export IMG_ASSET_DIR="${RUN_DIR}/tests/$TEST_NAME/img"
