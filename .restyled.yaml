@@ -1,4 +1,2 @@
 - shfmt:
-    arguments:
-      - -i 4   # four space indentation, not tabs
-      - -ci    # align case statements a saner way too
+    arguments: ["-w", "-i", "4", "-ci"]
