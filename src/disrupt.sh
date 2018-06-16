@@ -61,3 +61,4 @@ rm "${RENDERED_TEMPLATE}"
 if [[ -e "${PARTIAL}" ]]; then
     rm "${PARTIAL}"
 fi
+
