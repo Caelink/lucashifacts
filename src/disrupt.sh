@@ -18,8 +18,8 @@ PARTIAL="${RUN_DIR}/assets/partial"
 # Set the dice roll to zero if:
 #   - the image assets directory doesn't exist
 #   - no supported image files exist inside the image assets directory
-IMAGES_LIST=$(find "${IMG_ASSET_DIR}" -mindepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' \) )
-if [[ ! -d "${IMG_ASSET_DIR}" || ! "${IMAGES_LIST}" ]]; then
+IMAGES_LIST=$(find "${IMG_ASSET_DIR}" -mindepth 1 -type f \( -iname '*.jpg' -o -iname '*.png' \))
+if [[ ! -d ${IMG_ASSET_DIR} || ! ${IMAGES_LIST} ]]; then
     DICE_ROLL=0
 fi
 
@@ -29,7 +29,7 @@ if [[ -f $IMAGE_MATCH ]]; then
     SENT_IMAGE=$IMAGE_MATCH
 fi
 
-if [[ "${DICE_ROLL}" -eq 1 ]]; then
+if [[ ${DICE_ROLL} -eq 1 ]]; then
     # Setting INCLUDE_IMAGE allows us to conditionally include parts of the
     # Mustache template
     #
@@ -51,14 +51,13 @@ fi
 
 ${MO} "${TEMPLATE}" > "${RENDERED_TEMPLATE}"
 
-if [[ "$#" -eq 1 ]]; then
+if [[ $# -eq 1 ]]; then
     /usr/sbin/sendmail "${TO_EMAIL_ADDRESS}" < "${RENDERED_TEMPLATE}"
 else
     cat "${RENDERED_TEMPLATE}"
 fi
 rm "${RENDERED_TEMPLATE}"
 
-if [[ -e "${PARTIAL}" ]]; then
+if [[ -e ${PARTIAL} ]]; then
     rm "${PARTIAL}"
 fi
-

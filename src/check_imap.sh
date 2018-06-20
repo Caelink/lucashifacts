@@ -12,4 +12,3 @@ JSON="${RUN_DIR}/lib/JSON.sh"
 
 MATCHING=$(${JSON} < "${IMAP_SOURCE}" | grep -v "\[\]" | grep "$1")
 echo "$MATCHING" | cut -d']' -f2 | cut -d'"' -f2
-

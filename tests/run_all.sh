@@ -21,4 +21,3 @@ for test in "${tests_to_run[@]}"; do
 done
 
 exit $FAILED
-

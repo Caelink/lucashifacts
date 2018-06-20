@@ -8,4 +8,3 @@ if [ -r "$EMAILS" ]; then
 else
     $MAIL_SCRIPT
 fi
-

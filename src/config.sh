@@ -11,4 +11,3 @@ export IMAGE_RARITY=3
 export IMG_ASSET_DIR="$SECRETS/images"
 export EMAILS="$SECRETS/emails"
 export IMAP_SOURCE="$RUN_DIR/assets/related_imap.json"
-
