@@ -1,0 +1,2 @@
+- shfmt:
+    arguments: ["-w", "-i", "4", "-ci", "-sr", "-s"]
