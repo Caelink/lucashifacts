@@ -14,3 +14,4 @@ Literally meme at me
 - Shellcheck overrides are to be done with great caution.
 - 1 space after a comment at all times.
 - If you must use a language other than bash, it must have comments with \#
+- If it is not covered in the standards, it does not matter stylistically (all other changes optional)
