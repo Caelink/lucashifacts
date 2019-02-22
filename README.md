@@ -1,7 +1,6 @@
 # The ultimate source of your information about lucashi
 
-[![Build Status](https://travis-ci.org/Caelink/lucashifacts.svg?branch=master)](https://travis-ci.org/Caelink/lucashifacts) [![Code Climate](https://codeclimate.com/github/Caelink/lucashifacts.png)](https://codeclimate.com/github/Caelink/lucashifacts)
-[![Build Status](https://semaphoreci.com/api/v1/caelink/lucashifacts/branches/master/badge.svg)](https://semaphoreci.com/caelink/lucashifacts)
+[![Build Status](https://travis-ci.org/Caelink/lucashifacts.svg?branch=master)](https://travis-ci.org/Caelink/lucashifacts) [![Code Climate](https://codeclimate.com/github/Caelink/lucashifacts.png)](https://codeclimate.com/github/Caelink/lucashifacts) [![Build Status](https://semaphoreci.com/api/v1/caelink/lucashifacts/branches/master/badge.svg)](https://semaphoreci.com/caelink/lucashifacts) [![](https://codescene.io/projects/4205/status.svg) Get more details at **codescene.io**.](https://codescene.io/projects/4205/jobs/latest-successful/results)
 
 Literally meme at me
 
